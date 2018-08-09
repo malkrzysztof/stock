@@ -1,0 +1,149 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    width: 65%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#navbar{
+    background: #7f96b1;
+    height: 30px;
+    width: 700px;
+    margin: 0% auto 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#warehouseContainer{
+    background: #7f96b1;
+    width: 500px;
+    margin: 1% auto;
+}
+
+#ownedMaterial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5% 15% 0% 15%;
+    
+}
+
+#materials-tab{
+    background: #7f96b1;
+    width: 150px;
+    text-align: center;
+}
+
+#materials {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid black;
+}
+
+#materials button{
+    height: 35px;
+    background: #036b74;
+    transition: all 0.5s ease;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+}
+
+#materials:last-child {
+    border-bottom: none;
+}
+
+#materials button:hover{
+    transition: all 0.5s ease;
+    font-weight: bolder;
+    background: #067f89;
+}
+
+
+#actions{
+    background: #7f96b1;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border: 2.0px solid black;
+}
+
+#cities{
+    background: #7f96b1;
+    width: 150px;
+    text-align: center;
+}
+
+#travelDirections{
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid black;
+}
+
+#travelDirections button{
+    height: 35px;
+    background: #036b74;
+    transition: all 0.5s ease;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none
+}
+
+#travelDirections:last-child {
+    border-bottom: none
+}
+
+#travelDirections button:focus{
+    font-weight: bolder;
+    background: #067f89;
+    outline: none;
+}
+
+#travelDirections button:hover{
+    background: #067f89;
+    font-weight: bolder;
+}
+
+
+.btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    background: #036b74;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background: #067f89;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+#infoBox {
+    background: #7f96b1;
+    height: 150px;
+    width: 450px;
+    border: 1.5px solid black;
+    overflow: auto;
+}
+

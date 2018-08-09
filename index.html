@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Stock exchange</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/start.css">
+	<link rel="stylesheet" type="text/css" href="styles/background.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+	<div id="particles-js"></div>
+			<div id="navbar">
+				<button class="btn d-none" id="resetBtn" style="height: 25px; width: 60px;" onclick="resetGame()">RESET</button>
+				<p>Round <span id="round">0</span>/<span id="maxRound"></span></p>
+				<p>Player: <span id="player"></span></p>
+				<p>You are in: <span id="currentLocation"></span></p>
+				<p>money: <span id="money"></span> $ 
+			</div>
+		<div id="game" class="d-none">
+			<hr>
+			<div id="warehouseContainer">
+				<p>Your wahrehouse: <span id="wareHouse"></span> / <span id="wareHouseLimit"></span></p>
+					<div id="ownedMaterial">
+						<p>Wood <span id="ownedWood">0</span> t</p>
+						<p>Iron <span id="ownedIron">0</span> t</p>
+						<p>Steel <span id="ownedSteel">0</span> t</p>
+						<p>Silver <span id="ownedSilver">0</span> t</p>
+						<p>Gold <span id="ownedGold">0</span> t</p>
+					</div>
+			</div>
+			<hr>
+			<div id="container">
+				<div id="materials-tab">
+					<h3>Materials:</h3>
+					<div id="materials">
+						<button id="wood" onclick="selectMaterial(wood)">
+							Wood: <span id="woodPrice"></span> $/t</button>
+						<button id="iron" onclick="selectMaterial(iron)">
+							Iron: <span id="ironPrice"></span> $/t</button>
+						<button id="iron" onclick="selectMaterial(steel)">
+							Steel: <span id="steelPrice"></span> $/t</button>
+						<button id="iron" onclick="selectMaterial(silver)">
+							Silver: <span id="silverPrice"></span> $/t</button>
+						<button id="iron" onclick="selectMaterial(gold)">
+							Gold: <span id="goldPrice"></span> $/t</button>
+					</div>
+				</div>
+				<div id="actions">
+					<h3>Actions:</h3>
+					Wich one you want buy or sell?
+					</br>
+					<span id="currentMaterial"></span>
+					</br>
+					How much?
+					</br>
+					<input type="numbers" name="amount" id="amount" placeholder="How much?"/>
+					</br>
+					<button id="btnBuy" class="btn" onclick="buyMaterial()">BUY</button>
+					<button id="sell" class="btn" onclick="sellMaterial()">SELL</button>
+				</div>
+				<div id="cities">
+					<h3>Travel to:</h3>
+					<h6>Each travel cost you 10$</h6>
+					<div id="travelDirections">
+						<button id="warsaw" onclick="changeCity(warsaw)">Go to WARSAW</button>
+						<button id="berlin" onclick="changeCity(berlin)">Go to BERLIN</button>
+						<button id="paris" onclick="changeCity(paris)">Go to PARIS</button>
+						<button id="london" onclick="changeCity(london)">Go to LONDON</button>
+						<button id="madrit" onclick="changeCity(madrit)">Go to MADRIT</button>
+					</div>
+				</div>
+			</div>
+			<div id="container">
+				<div id="uprades">
+					<h3>You can buy upgrades:</h3>
+					<p>Buy 5t warehouse space for 1000$ <button id="buyUpgrade" class="btn" onclick="buyUpgrade()">BUY</button></p>
+				</div>
+				<div id="infoBox">
+					<p>Buy and sell material, travel, earn money. Each travel cost you one round. Enjoy!</p>
+				</div>
+			</div>
+		</div>
+
+<div id="start" class="active">
+			<div id="namePlace">
+				<h1>ENETER YOUR NAME:</h1>
+				<input type="text" name="name" id="name" placeholder="your name">
+				<br>
+				<button class="btn" onclick="startGame()">Start Game!</button>
+			</div>
+			<hr>
+			<div id="scoreTable">
+				<h4>Score table:</h4>
+				<ul id="scoreList">
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script type="text/javascript" src="background.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript" src="variables.js"></script>
+</body>
+</html>

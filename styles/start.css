@@ -1,0 +1,25 @@
+.active{
+	display: block;
+}
+
+.d-none{
+	display: none;
+}
+
+#namePlace{
+    text-align: center;
+    margin-top: 8%;
+}
+
+#scoreTable {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#scoreTable ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+    text-align: center;
+    list-style: decimal;
+}
