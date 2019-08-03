@@ -114,9 +114,9 @@ var madrit = {}
 	madrit.goldPriceHolder = document.getElementById("goldPrice");
 
 var round = 0;
-var maxRound = 20;
+var maxRound = 50;
 document.getElementById("maxRound").innerHTML = maxRound
-var money = 500;
+var money = 100;
 document.getElementById("money").innerHTML = money;
 var amount = document.getElementById("amount");
 var wareHouse = 0;
